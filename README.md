@@ -1,18 +1,99 @@
-## Getting Started
+📘 Proyecto de Componentes Vehiculares
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Sistema orientado a objetos para modelar diferentes componentes de un vehículo.
 
-## Folder Structure
+🚗 Descripción General
 
-The workspace contains two folders by default, where:
+Este proyecto implementa un conjunto de clases que representan los diferentes componentes que conforman un vehículo: motor, transmisión, chasis, neumáticos, sistema eléctrico, sistema de frenos, mantenimiento, sensores, etc.
+El objetivo es aplicar principios de POO, encapsulamiento, composición y responsabilidad única.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+📂 Estructura del Proyecto
+src/
+ └── com.vehiculos/
+      ├── Vehiculo.java
+      ├── Motor.java
+      ├── Transmision.java
+      ├── Chasis.java
+      ├── Neumatico.java
+      ├── SistemaElectrico.java
+      ├── SistemaFrenos.java
+      ├── RegistroVehicular.java
+      ├── Mantenimiento.java
+      ├── Sensor.java
+      └── Main.java
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+🧩 Funcionalidades principales
+✔ Vehiculo
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Clase principal que integra todos los componentes.
 
-## Dependency Management
+Incluye:
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Datos básicos (marca, modelo, año)
+
+Asociación con: Motor, Transmisión, Chasis, Neumáticos, Sistema eléctrico, Sistema de frenos
+
+Métodos: mostrarInfo(), encender(), apagar()
+
+✔ Motor
+
+Tipo, cilindrada, caballos de fuerza
+
+Método: encenderMotor(), apagarMotor()
+
+✔ Transmisión
+
+Tipo: automática / manual
+
+Número de marchas
+
+✔ Chasis
+
+Material, peso, tipo
+
+✔ Neumático
+
+Tipo, tamaño, presión
+
+✔ Sistema Eléctrico
+
+Voltaje, estado batería
+
+✔ Sistema de Frenos
+
+Tipo de freno, nivel de desgaste
+
+✔ Registro Vehicular
+
+Placa, fecha de registro, propietario
+
+Método: mostrarRegistro()
+
+✔ Mantenimiento
+
+Fecha, tipo, técnico
+
+Método: realizarMantenimiento()
+
+✔ Sensor
+
+Tipo: temperatura, presión, velocidad
+
+Método: leerValor()
+
+▶ Ejecución del proyecto
+Si trabajas en VS Code:
+
+Instalar extensiones:
+
+Extension Pack for Java
+
+Debugger for Java
+
+Abrir la carpeta del proyecto.
+
+Ejecutar Main.java:
+
+Clic en el botón Run arriba del método main
+
+O presionar Ctrl + F5
